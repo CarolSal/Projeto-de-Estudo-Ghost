@@ -1,0 +1,184 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.cabecalho{
+    background-color: rgb(0, 0, 0) 0%, rgba(0,0,0,0.8) 50%, rgb(0, 0, 0);
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.cabecalho .logo{
+    width: 120px;
+    padding-top: 15px;
+    margin-left: 12px;
+}
+
+
+
+.cabecalho .menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho nav li a{
+    font-weight: bold;
+    color: #bea961;
+    font-size: 24px;
+    padding: 16px 24px;
+    border-radius: 50px;
+    transition: 0.2s;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    
+}
+
+
+.cabecalho nav li a:hover{
+    color: rgb(152,4,4);
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 132px);
+    padding: 0px 30px 30px;
+}
+
+.container .imagem-titulo{
+    max-width: 500px;
+}
+
+.container .album{
+    color: #bea961;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+    font-family: 'Cinzel', serif;
+    
+}
+
+
+.container .descricao{
+    color: white;
+    width: 85%;
+    font-size: 18px;
+    margin: 8px 0;
+    font-family: 'Cinzel', serif;
+}
+.container .descricao2{
+    color: white;
+    width: 85%;
+    font-size: 18px;
+    margin: 8px 0;
+    font-family: 'Cinzel', serif;
+}
+
+.container .descricao3{
+    color: white;
+    width: 85%;
+    font-size: 18px;
+    margin: 8px 0;
+    font-family: 'Cinzel', serif;
+}
+.container .botao-clipe{
+    background-color: #bea961;
+    color: rgb(152,4,4);
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s all ease-in-out;
+}
+
+.container .botao-clipe:hover{
+    transform: scale(1.1);
+
+}
+
+.container .ghost{
+    padding: auto;
+    width: 400px;
+    margin-top: 52px;
+}
+
+.fundo-video{
+    background-color: rgba(2, 2, 2, 0.13);
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.fundo-video .video{
+    height: 100vh;
+}
+
+.fundo-video::after{
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0,0,0,0.8) 50%, rgb(0, 0, 0) 100%);
+}
+
+.modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(32, 32, 32, 0.247);
+    visibility: hidden;
+}
+
+.conteudo-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  
+}
+
+.fechar-modal{
+    background-color: #000000e1;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 24px;
+    width: 640px;
+    text-align:right;
+    padding-right: 10px;
+    cursor: pointer;
+    
+}
+
+.modal iframe{
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+    
+}
+
+.modal.aberto{
+    opacity: 1;
+    visibility: visible;
+}
